@@ -8,34 +8,37 @@
         Title="Menu Calendar" Height="768" Width="1024" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="59*"/>
-            <ColumnDefinition Width="51*"/>
-            <ColumnDefinition Width="42*"/>
-            <ColumnDefinition Width="41*"/>
-            <ColumnDefinition Width="44*"/>
-            <ColumnDefinition Width="43*"/>
-            <ColumnDefinition Width="51*"/>
-            <ColumnDefinition Width="177*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition MinWidth="150"/>
+            <ColumnDefinition MinWidth="150"/>
+            <ColumnDefinition MinWidth="150"/>
+            <ColumnDefinition MinWidth="150"/>
+            <ColumnDefinition MinWidth="150"/>
+            <ColumnDefinition MinWidth="150"/>
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="37*"/>
             <RowDefinition Height="50*"/>
-            <RowDefinition Height="68*"/>
-            <RowDefinition Height="80*"/>
-            <RowDefinition Height="72*"/>
-            <RowDefinition Height="84*"/>
-            <RowDefinition Height="104*"/>
-            <RowDefinition Height="84*"/>
-            <RowDefinition Height="158*"/>
+            <RowDefinition MinHeight="20"/>
+            <RowDefinition MinHeight="90"/>
+            <RowDefinition MinHeight="90"/>
+            <RowDefinition MinHeight="90"/>
+            <RowDefinition MinHeight="90"/>
+            <RowDefinition MinHeight="90"/>
+            <RowDefinition MinHeight="90"/>
+            <RowDefinition MinHeight="90"/>
         </Grid.RowDefinitions>
-        
+
         <!--Row 0-->
-        <Menu Grid.ColumnSpan="8" Grid.Row="0">
+        <Menu Grid.ColumnSpan="7" Grid.Row="0">
             <MenuItem Header="File">
 
             </MenuItem>
         </Menu>
-        
+
+        <Button Grid.Column="2" Grid.Row="1">Print</Button>
+
         <!--Row 1-->
         <StackPanel Grid.Column="0" Grid.Row="1">
             <TextBlock Text="From:"/>
@@ -46,5 +49,244 @@
             <TextBlock Text="To:"/>
             <TextBlock Text="1/1/2018"/>
         </StackPanel>
+
+        <!--Row 2-->
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="BreakFast"/>
+        <TextBlock Grid.Column="2" Grid.Row="2" Text="AM Snack"/>
+        <TextBlock Grid.Column="3" Grid.Row="2" Text="Lunch"/>
+        <TextBlock Grid.Column="4" Grid.Row="2" Text="PM Snack"/>
+        <TextBlock Grid.Column="5" Grid.Row="2" Text="Dinner"/>
+        <TextBlock Grid.Column="6" Grid.Row="2" Text="EV Snack"/>
+
+        <!--Row 3-->
+        <TextBlock Grid.Column="0" Grid.Row="3" Text="SUNDAY"/>
+        <ListView Grid.Column="1" Grid.Row="3">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="2" Grid.Row="3">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="3" Grid.Row="3">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="4" Grid.Row="3">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="5" Grid.Row="3">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="6" Grid.Row="3">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+
+        <!--Row 4-->
+        <TextBlock Grid.Column="0" Grid.Row="4" Text="MONDAY"/>
+        <ListView Grid.Column="1" Grid.Row="4">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="2" Grid.Row="4">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="3" Grid.Row="4">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="4" Grid.Row="4">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="5" Grid.Row="4">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="6" Grid.Row="4">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+
+        <!--Row 5-->
+        <TextBlock Grid.Column="0" Grid.Row="5" Text="TUESDAY"/>
+        <ListView Grid.Column="1" Grid.Row="5">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="2" Grid.Row="5">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="3" Grid.Row="5">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="4" Grid.Row="5">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="5" Grid.Row="5">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="6" Grid.Row="5">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+
+        <!--Row 6-->
+        <TextBlock Grid.Column="0" Grid.Row="6" Text="WEDNESDAY"/>
+        <ListView Grid.Column="1" Grid.Row="6">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="2" Grid.Row="6">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="3" Grid.Row="6">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="4" Grid.Row="6">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="5" Grid.Row="6">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="6" Grid.Row="6">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+
+        <!--Row 7-->
+        <TextBlock Grid.Column="0" Grid.Row="7" Text="THURSDAY"/>
+        <ListView Grid.Column="1" Grid.Row="7">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="2" Grid.Row="7">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="3" Grid.Row="7">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="4" Grid.Row="7">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="5" Grid.Row="7">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="6" Grid.Row="7">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+
+        <!--Row 8-->
+        <TextBlock Grid.Column="0" Grid.Row="8" Text="FRIDAY"/>
+        <ListView Grid.Column="1" Grid.Row="8">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="2" Grid.Row="8">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="3" Grid.Row="8">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="4" Grid.Row="8">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="5" Grid.Row="8">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="6" Grid.Row="8">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+
+        <!--Row 9-->
+        <TextBlock Grid.Column="0" Grid.Row="9" Text="SATURDAY"/>
+        <ListView Grid.Column="1" Grid.Row="9">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="2" Grid.Row="9">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="3" Grid.Row="9">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="4" Grid.Row="9">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="5" Grid.Row="9">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
+        <ListView Grid.Column="6" Grid.Row="9">
+            <TextBlock Text="Apple"/>
+            <TextBlock Text="Apple Juice"/>
+            <TextBlock Text="Eggs"/>
+        </ListView>
     </Grid>
 </Window>

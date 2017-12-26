@@ -5,8 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MenuCalendar.Views"
         mc:Ignorable="d"
-        Title="ShellView" Height="300" Width="300">
+        Title="Menu Calendar" Height="768" Width="1024" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="51*"/>
+            <ColumnDefinition Width="42*"/>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="44*"/>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="51*"/>
+            <ColumnDefinition Width="177*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="72*"/>
+            <RowDefinition Height="84*"/>
+            <RowDefinition Height="104*"/>
+            <RowDefinition Height="84*"/>
+            <RowDefinition Height="158*"/>
+        </Grid.RowDefinitions>
         
+        <!--Row 0-->
+        <Menu Grid.ColumnSpan="8" Grid.Row="0">
+            <MenuItem Header="File">
+
+            </MenuItem>
+        </Menu>
+        
+        <!--Row 1-->
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <TextBlock Text="From:"/>
+            <DatePicker />
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <TextBlock Text="To:"/>
+            <TextBlock Text="1/1/2018"/>
+        </StackPanel>
     </Grid>
 </Window>
